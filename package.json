@@ -5,14 +5,22 @@
   "author": "Andy <limengkai_a@163.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "nodemon server.js",
     "start": "npm run dev",
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js"
   },
   "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "2.0.1",
+    "serve-favicon": "^2.5.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "3.0.1",
+    "vue-template-compiler": "^2.5.2",
+    "webpack-hot-middleware": "^2.25.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -53,9 +61,8 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
-    "vue-loader": "^13.3.0",
+    "vue-loader": "^13.7.3",
     "vue-style-loader": "^3.0.1",
-    "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
